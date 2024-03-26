@@ -28,7 +28,8 @@ class _TestDetailsScreenState extends State<TestDetailsScreen> {
   void fetchLabsForTest() async {
     try {
       // Assuming widget.test.labIds contains the list of lab IDs associated with the test
-      List<LabModel> fetchedLabs = await AuthProvider().fetchLabsForTest(widget.test.labIds);
+      List<LabModel> fetchedLabs =
+          await AuthProvider().fetchLabsForTest(widget.test.labIds);
 
       setState(() {
         labs = fetchedLabs;
@@ -56,12 +57,12 @@ class _TestDetailsScreenState extends State<TestDetailsScreen> {
               ),
               SizedBox(height: 16),
               Text(
-                "Price: \$${widget.test.price}",
+                "",
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(height: 16),
               Text(
-                "Labs Offering this Test:",
+                "",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 16),
@@ -76,15 +77,14 @@ class _TestDetailsScreenState extends State<TestDetailsScreen> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) =>
-                                    BookingScreen()));
+                                builder: (context) => BookingScreen()));
                       },
                     );
                   }).toList(),
                 )
               else
                 Text(
-                  "No labs available for this test.", // Update with appropriate message or UI
+                  "", // Update with appropriate message or UI
                   style: TextStyle(fontSize: 16),
                 ),
             ],
@@ -113,7 +113,7 @@ class LabtestCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.asset(
-            'assets/images/fever.jpg', // Replace with the actual image path
+            'assets/images/php.png', // Replace with the actual image path
             fit: BoxFit.cover,
             height: 120,
             width: double.infinity,

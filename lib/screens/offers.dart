@@ -56,7 +56,7 @@ class SpecialOffers extends StatelessWidget {
               child: OffersCard(
                 labName: "Room 3",
                 rating: 4.9,
-                designation: "",
+                designation: "Avialable",
                 fees: "",
                 appointmentTimings: "8:00 AM - 5:00",
                 image: AssetImage("assets/images/download.png"),
@@ -65,10 +65,10 @@ class SpecialOffers extends StatelessWidget {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 10),
               child: OffersCard(
-                labName: "offer 1",
+                labName: "Room 4",
                 rating: 4.9,
-                designation: "Senior Surgeon",
-                fees: "Fees: 12 Dollars",
+                designation: "Avialable",
+                fees: "",
                 appointmentTimings: "8:00 AM - 5:00",
                 image: AssetImage("assets/images/download.png"),
               ),
@@ -76,12 +76,12 @@ class SpecialOffers extends StatelessWidget {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 10),
               child: OffersCard(
-                labName: "offer 1",
+                labName: "Room 5",
                 rating: 4.9,
-                designation: "Senior Surgeon",
-                fees: "Fees: 12 Dollars",
+                designation: "Available",
+                fees: "",
                 appointmentTimings: "8:00 AM - 5:00",
-                image: AssetImage("assets/images/doctor2.jpg"),
+                image: AssetImage("assets/images/download.png"),
               ),
             ),
           ],

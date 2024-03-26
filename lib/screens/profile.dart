@@ -138,7 +138,7 @@ class ProfileScreen extends StatelessWidget {
                             },
                           ),
                           ListTile(
-                            leading: Icon(Icons.electric_bolt),
+                            leading: Icon(Icons.record_voice_over_sharp),
                             title: Text('Monthly Records'),
                             onTap: () {
                               // Add your settings logic here

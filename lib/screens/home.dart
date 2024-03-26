@@ -22,18 +22,18 @@ class HomeScreen extends StatelessWidget {
   List<String> packages = [
     "Python Books",
     "React",
-    "Python Book",
-    "pregnancy",
-    "infertility for male",
-    "infertility for female",
+    "Java",
+    "Full Stack",
+    "PHP",
+    "C++",
   ];
   List<String> tests = [
     "Physology",
-    "HIV",
-    "Typhoid",
-    "Pragnancy",
-    "Xray",
-    "Blood",
+    "Java Beginers",
+    "Accounting",
+    "PHP For Beginers",
+    "Managment",
+    "Science",
   ];
   List<String> labs = [
     "lab1",
@@ -42,20 +42,20 @@ class HomeScreen extends StatelessWidget {
   List<String> packages_imagePaths = [
     'assets/images/python.jpg',
     'assets/images/React.png',
-    'assets/images/fever.jpg',
-    'assets/images/influenza.jpg',
-    'assets/images/irontest.jpg',
-    'assets/images/fever.jpg',
+    'assets/images/java.png',
+    'assets/images/fulls.png',
+    'assets/images/php.png',
+    'assets/images/C.png',
     // Add more image paths as needed
   ];
 
   List<String> tests_imagePaths = [
     'assets/images/py.jpg',
-    'assets/images/doctor2.jpg',
-    'assets/images/doctor3.jpg',
-    'assets/images/py.jpg',
-    'assets/images/doctor2.jpg',
-    'assets/images/doctor3.jpg',
+    'assets/images/java.png',
+    'assets/images/A.png',
+    'assets/images/php.png',
+    'assets/images/M.png',
+    'assets/images/SC.png',
     // Add more image paths as needed
   ];
 
@@ -244,7 +244,7 @@ class HomeScreen extends StatelessWidget {
                   title: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Icon(Icons.percent_sharp),
+                      Icon(Icons.room),
                       SizedBox(
                         width: 8,
                       ),
@@ -331,7 +331,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     radius: 25,
-                    backgroundImage: AssetImage("assets/images/doctor1.jpg"),
+                    backgroundImage: AssetImage("assets/images/profile.png"),
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 15),
@@ -623,7 +623,7 @@ class HomeScreen extends StatelessWidget {
                         );
                       } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
                         return Center(
-                          child: Text("No top labs available."),
+                          child: Text("No top Books available."),
                         );
                       } else {
                         // Use the fetched list of top labs to create LabCard widgets
@@ -828,7 +828,7 @@ class HomeScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Popular Profiles",
+                        "",
                         style: TextStyle(
                           fontSize: 25,
                           fontWeight: FontWeight.w500,
@@ -912,7 +912,7 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Not Sure About Your Test",
+                          "Any Inquery Call US Group B47",
                           style: TextStyle(
                             fontSize: 15,
                             color: Colors.white,

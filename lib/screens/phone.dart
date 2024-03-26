@@ -50,7 +50,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       shape: BoxShape.circle,
                     ),
                     child: Image.asset(
-                      "assets/images/doctors.png",
+                      "assets/images/WL.jpg",
                     ),
                   ),
                   const SizedBox(height: 30),
@@ -63,7 +63,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                   const SizedBox(height: 10),
                   const Text(
-                    "Add your phone number. We'll send you a verification code",
+                    "Phone number. We'll send you a verification code",
                     style: TextStyle(
                       fontSize: 14,
                       color: Colors.black38,
@@ -91,7 +91,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         fontSize: 15,
                         color: Colors.grey.shade600,
                       ),
-                      contentPadding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+                      contentPadding: const EdgeInsets.symmetric(
+                          vertical: 5, horizontal: 10),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide: const BorderSide(color: Colors.black12),
@@ -128,23 +129,22 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ),
                       suffixIcon: phoneController.text.length > 9
                           ? Container(
-                        height: 30,
-                        width: 30,
-                        margin: const EdgeInsets.all(5.0),
-                        decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Colors.green,
-                        ),
-                        child: const Icon(
-                          Icons.done,
-                          color: Colors.white,
-                          size: 20,
-                        ),
-                      )
+                              height: 30,
+                              width: 30,
+                              margin: const EdgeInsets.all(5.0),
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.green,
+                              ),
+                              child: const Icon(
+                                Icons.done,
+                                color: Colors.white,
+                                size: 20,
+                              ),
+                            )
                           : null,
                     ),
                   ),
-
                   const SizedBox(height: 20),
                   SizedBox(
                     width: double.infinity,

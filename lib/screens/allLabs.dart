@@ -9,7 +9,7 @@ class AllLabsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("All Labs"),
+        title: Text("All Books"),
       ),
       body: FutureBuilder<List<LabModel>>(
         future: AuthProvider().fetchLabs(),
@@ -24,7 +24,7 @@ class AllLabsScreen extends StatelessWidget {
             );
           } else if (snapshot.data == null || snapshot.data!.isEmpty) {
             return Center(
-              child: Text("No labs available."),
+              child: Text("No Books available."),
             );
           } else {
             return ListView.builder(
@@ -88,7 +88,11 @@ class AllLabsScreen extends StatelessWidget {
                                 // Handle booking button click
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => LabDetailPage(lab: lab,authProvider: AuthProvider(),)),
+                                  MaterialPageRoute(
+                                      builder: (context) => LabDetailPage(
+                                            lab: lab,
+                                            authProvider: AuthProvider(),
+                                          )),
                                 );
                               },
                               style: ElevatedButton.styleFrom(
