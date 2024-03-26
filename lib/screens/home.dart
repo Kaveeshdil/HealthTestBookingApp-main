@@ -249,7 +249,7 @@ class HomeScreen extends StatelessWidget {
                         width: 8,
                       ),
                       Text(
-                        'Offers',
+                        'Book a room',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,

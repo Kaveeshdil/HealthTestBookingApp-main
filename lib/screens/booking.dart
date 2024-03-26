@@ -12,7 +12,7 @@ class _BookingScreenState extends State<BookingScreen> {
   final TextEditingController timeController = TextEditingController();
   final TextEditingController pathologistController = TextEditingController();
   String selectedGender = 'Male'; // Default gender selection
-  String selectedPaymentOption = 'Cash'; // Default payment option
+  String selectedPaymentOption = 'One'; // Default payment option
   String selectedTime = '';
   List<String> availableTimings = [
     '09:00 AM',
@@ -132,7 +132,7 @@ class _BookingScreenState extends State<BookingScreen> {
                 ).toList(),
               ),
               SizedBox(height: 16),
-              Text('Select Payment Option:'),
+              Text('How Many Students '),
               DropdownButton<String>(
                 value: selectedPaymentOption,
                 onChanged: (value) {
@@ -140,8 +140,8 @@ class _BookingScreenState extends State<BookingScreen> {
                     selectedPaymentOption = value!;
                   });
                 },
-                items: ['Cash', 'Credit Card', 'Debit Card']
-                    .map<DropdownMenuItem<String>>(
+                items:
+                    ['One', 'Two', 'Two or More'].map<DropdownMenuItem<String>>(
                   (String value) {
                     return DropdownMenuItem<String>(
                       value: value,

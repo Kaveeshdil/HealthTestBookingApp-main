@@ -55,8 +55,8 @@ class _NavBarState extends State<NavBar> {
               label: "Schedule",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.percent_sharp),
-              label: "Offers",
+              icon: Icon(Icons.room),
+              label: "Bookings",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.perm_identity),
